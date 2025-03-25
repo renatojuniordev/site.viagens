@@ -1,0 +1,81 @@
+.hero {
+	padding: 24px 0;
+
+	.container {
+		@include flex(row, center, space-between, 8px);
+
+		// resposividade
+		@include responsive(mobile-small) {
+			@include flex(column, center, center, 8px);
+		}
+
+		.container-hero-text {
+			@include flex(column, flex-start, flex-start, 24px);
+			max-width: 487px;
+
+			@include responsive(mobile-small) {
+				@include flex(column, center, center, 24px);
+				text-align: center;
+			}
+
+			.hero-text {
+				@include flex(column, flex-start, flex-start, 16px);
+
+				p {
+					color: rgba($color: $white, $alpha: 0.8);
+
+					@include responsive(mobile-small) {
+						font-size: 1.3rem;
+					}
+				}
+			}
+
+			// CTA
+			.btn {
+				@include flex(row, center, center, 10px);
+				padding: 13px 26px;
+
+				@include responsive(mobile-portrait) {
+					font-size: 1.4rem;
+				}
+			}
+
+			// resposividade
+			@include responsive(tablet-portrait) {
+				max-width: 416px;
+			}
+
+			@include responsive(mobile-portrait) {
+				max-width: 344px;
+			}
+		}
+
+		.hero-image {
+			img {
+				width: 588px;
+				height: 398px;
+				// animation: voar 10s ease-in-out infinite;
+
+				@keyframes voar {
+					0% {
+						transform: translate(0, 0) rotate(0deg);
+						opacity: 1;
+					}
+					90% {
+						transform: translate(100vw, -50vh) rotate(-20deg);
+						opacity: 1;
+					}
+					100% {
+						opacity: 0;
+						transform: translate(100vw, -100vh) rotate(-20deg);
+					}
+				}
+
+				@include responsive(mobile-portrait) {
+					width: 344px;
+					height: 232.48px;
+				}
+			}
+		}
+	}
+}

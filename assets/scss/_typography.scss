@@ -1,0 +1,103 @@
+h1.display-large {
+	@include desktop-display-large;
+
+	// Responsive
+	@include responsive(tablet-landscape) {
+		@include tablet-display-large;
+	}
+
+	@include responsive(mobile-landscape) {
+		@include mobile-display-large;
+	}
+}
+
+h1.display {
+	@include desktop-display;
+
+	// Responsive
+	@include responsive(tablet-landscape) {
+		@include tablet-display-large;
+	}
+
+	@include responsive(mobile-landscape) {
+		@include mobile-display-large;
+	}
+}
+
+h1 {
+	@include desktop-h1;
+
+	// Responsive
+	@include responsive(tablet-landscape) {
+		@include tablet-h1;
+	}
+
+	@include responsive(mobile-landscape) {
+		@include mobile-h1;
+	}
+}
+
+h2 {
+	@include desktop-h2;
+
+	// Responsive
+	@include responsive(tablet-landscape) {
+		@include tablet-h2;
+	}
+
+	@include responsive(mobile-landscape) {
+		@include mobile-h2;
+	}
+}
+
+h3 {
+	@include desktop-h3;
+
+	// Responsive
+	@include responsive(tablet-landscape) {
+		@include tablet-h3;
+	}
+
+	@include responsive(mobile-landscape) {
+		@include mobile-h3;
+	}
+}
+
+h4 {
+	@include desktop-h4;
+
+	// Responsive
+	@include responsive(tablet-landscape) {
+		@include tablet-h4;
+	}
+
+	@include responsive(mobile-landscape) {
+		@include mobile-h4;
+	}
+}
+
+h5 {
+	@include desktop-h5;
+
+	// Responsive
+	@include responsive(tablet-landscape) {
+		@include tablet-h5;
+	}
+
+	@include responsive(mobile-landscape) {
+		@include mobile-h5;
+	}
+}
+
+h6 {
+	@include desktop-h6;
+
+	// Responsive
+	@include responsive(tablet-landscape) {
+		@include tablet-h6;
+	}
+
+	@include responsive(mobile-landscape) {
+		@include mobile-h6;
+	}
+}

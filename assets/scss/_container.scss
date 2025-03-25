@@ -1,0 +1,71 @@
+.container {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+// Quando for wide
+@include responsive(wide) {
+	.container {
+		max-width: 1280px;
+	}
+}
+
+// Quando for desktop
+@include responsive(desktop) {
+	.container {
+		max-width: 1260px;
+	}
+}
+
+// Quando for laptop
+@include responsive(laptop) {
+	.container {
+		max-width: 1260px;
+	}
+}
+
+// Quando for laptop hd
+@include responsive(laptop-hd) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+// Quando for tablet landscape
+@include responsive(tablet-landscape) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+// Quando for tablet portrait
+@include responsive(tablet-portrait) {
+	.container {
+		max-width: 900px;
+	}
+}
+
+// Quando for celular landscape
+@include responsive(mobile-landscape) {
+	.container {
+		width: 100%;
+		padding: 0 2.4rem;
+	}
+}
+
+// Quando for celular portrait
+@include responsive(mobile-portrait) {
+	.container {
+		width: 100%;
+		padding: 0 2.4rem;
+	}
+}
+
+// Quando for celular small
+@include responsive(mobile-small) {
+	.container {
+		width: 100%;
+		padding: 0 1.6rem;
+	}
+}

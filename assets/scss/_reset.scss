@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	font-family: $font-family;
+}
+
+html {
+	font-size: $html-font-size; // 1rem = 10px
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	font-size: $font-size; // 1.6rem = 16px
+	background-color: $bg-color-body;
+	color: $white;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	all: unset;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+ul {
+	list-style: none;
+}
+
+p {
+	line-height: $line-height-body;
+	font-weight: 400;
+
+	// Responsive
+	@include responsive(tablet-landscape) {
+		@include mobile-p;
+	}
+}
