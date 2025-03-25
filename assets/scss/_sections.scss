@@ -2,7 +2,7 @@
 	padding: 24px 0;
 
 	.container {
-		@include flex(row, center, space-between, 8px);
+		@include flex(row, center, space-between, 8px);		
 
 		// resposividade
 		@include responsive(mobile-small) {
@@ -53,27 +53,26 @@
 		.hero-image {
 			img {
 				width: 588px;
-				height: 398px;
-				// animation: voar 10s ease-in-out infinite;
-
-				@keyframes voar {
-					0% {
-						transform: translate(0, 0) rotate(0deg);
-						opacity: 1;
-					}
-					90% {
-						transform: translate(100vw, -50vh) rotate(-20deg);
-						opacity: 1;
-					}
-					100% {
-						opacity: 0;
-						transform: translate(100vw, -100vh) rotate(-20deg);
-					}
-				}
+				height: 398px;				
 
 				@include responsive(mobile-portrait) {
 					width: 344px;
 					height: 232.48px;
+				}
+			}
+
+			@keyframes voar {
+				0% {
+					transform: translate(0, 0) rotate(0deg);
+					opacity: 0;
+				}
+				90% {
+					transform: translate(100vw, -50vh) rotate(-20deg);
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+					transform: translate(100vw, -100vh) rotate(-20deg);
 				}
 			}
 		}
